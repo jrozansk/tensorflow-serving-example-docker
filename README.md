@@ -18,4 +18,10 @@ To run model server run:
 Now you can communicate with model server on localhost:9000.
 Running inference is as simple as this (taken from [tutorial page](https://www.tensorflow.org/serving/serving_basic))
 
+    virtualenv ve
+    . ve/bin/activate
+    pip install tensorflow-serving-api
+    
+    git clone git@github.com:tensorflow/serving.git
+    cd serving
     python tensorflow_serving/example/mnist_client.py --num_tests=1000 --server=localhost:9000
